@@ -1,16 +1,23 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en-us">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <title>wind-speed</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Latitude</title>
 </head>
 
 <body>
@@ -55,41 +62,33 @@
     </div>
     <!-- Header bar end -->
     <br>
-    <!-- Summary Screen Start -->
+    <!-- Summary Screen Start   -->
+    <header>
+        <h1>Comparison: Latitude vs. X</h1>
+    </header>
+
+    <br>
+    <h2 style="position:absolute;left:20%;color:rgb(46, 159, 163)">vs. Wind-speed</h2>
+    <br>
+
     <div class="Col_container">
         <div class="row">
             <div class="col-md-8">
-                <main class="container1">
-                    <header>
-                        <h1>Summary: Latitude vs. X</h1>
-                    </header>
-                    <section id="introduction">
-                        <figure id="main_figure">
-                            <img id="main_fig" src="Resources\assets\images\Fig1.png" alt="latitude_Max-Temperature"
-                                style="width:300px;height:300px;float:left">
-                        </figure>
-                        <p> 
-                            <br/>&nbsp &nbsp &nbsp &nbsp The Purpose of this project was to analyze how weather changes as you get closer
-                            to the equator. To accoumplish this, we first pulled data from the OpenWeatherMap API to assemble a data set on over 500 cities.
-                        </p>
-                        <p>
-                            <br/>&nbsp &nbsp &nbsp &nbsp After Assembling the dataset we used Matplotlib to plot various aspects of the weather Vs. Latitude. 
-                            Factors we looked at includes Temperature, Cloudiness, Wind-speed and Humidity. This site provides the sources data and 
-                            visualizations created as part of the analysis, as well as explinations and descriptions of any trands and correlations witnessed.
-                        
-                        </p>
-                    </section>
-                </main>
+                <figure class="figure">
+                    <img src="Resources\assets\images\Fig4.png" alt="latitude_wind-speed(mph)"
+                        style="width:100%;height:100%;">
+                    <figcaption>
+                        This graph shows that wind speed is generally below 15 MPH, but tend to be higher than thats between Latitudes 40-80 degrees.
+                    </figcaption>
+                </figure>
             </div>
             <!-- Summary Screen End -->
             <!-- Visualizations screen Start       -->
             <div class="col-md-4">
-
                 <main class="container2">
                     <header>
                         <h2>Visualizations</h2>
                     </header>
-
                     <div class="row">
                         <div class="col-xs-3 col-sm-3 col-md-6">
                             <figure id="main1_figure">
@@ -101,13 +100,13 @@
                         </div>
                         <div class="col-xs-3 col-sm-3 col-md-6">
                             <figure id="main1_figure">
+
                                 <a href="cloudiness.html">
                                     <img src="Resources\assets\images\Fig3.png" alt="latitude_Cloudiness"
                                         style="width:150px;height:150px;">
                                 </a>
                             </figure>
                         </div>
-
                         <div class="col-xs-3 col-sm-3 col-md-6">
                             <figure id="main1_figure">
                                 <a href="Humidity.html">
@@ -131,17 +130,21 @@
         <!-- Visualizations screen End       -->
         <br>
         <br>
+
+
+
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
             crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
             crossorigin="anonymous"></script>
+
 </body>
 
 </html>
